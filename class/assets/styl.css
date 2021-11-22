@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+h2 span{
+    color: grey;
+    font-size: 30px;
+}
+#aboutme{
+    margin-top: 80px;
+}
+p{
+    color: grey;
+}
+#intro-section{
+    background:linear-gradient(to bottom,rgba(8, 8, 8, 0.8)0%,rgba(8, 8, 8, 0.8)100%),url(http://coderspoint.net/html/showkes/assets/img/bg/intro-bg.jpg);
+    height: 100vh;
+    background-position:center;
+    background-size: cover;
+}
+#intro-section h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.line{
+    width: 60px;
+    margin: 15px auto;
+}
+img{
+    max-width: 100%;
+    border: 0;
+    vertical-align: auto;
+}
+.work{
+    row-gap: 15px;
+}
+#work .item{
+    position: relative;
+}
+#work .hidden{
+    overflow: hidden;
+}
+.title{
+    margin-bottom: 50px;
+}
+.item i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.4s;
+    transform: translate(-50%, -50%);
+    z-index: 444;
+}
+.item:hover i{
+    opacity: 1;
+}
+.item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: 0.4s;
+    transform: scale(0);
+    z-index: 1;
+}
+.item:hover .overlay{
+    opacity: 0.4;
+    transform: scale(1);
+}
+ .item img{
+ width: 100%;
+ transition: 0.4s;
+
+}
+.item:hover img{
+    transform: scale(1.1);
+}
+#work .icons div{
+    display:inline-block;
+}
+ .radius{
+    border: 2px solid black;
+    border-radius: 100%;
+    padding: 10px;
+}
+footer{
+    background-color: rgb(43, 42, 42);
+    padding: 30px 0px;
+    margin-top: 50px;
+}
+.text li{
+    list-style: none;
+    color: white;
+}
+ .text li a{
+text-decoration: none; 
+color: white;
+}
+ul .radius{
+    color:white;
+}
+.footer-icons li{
+    display: inline-block;
+}
+footer span{
+    color: white;
+}
+.devider{
+    margin: 80px 0px;
+}
+#work h5{
+margin: 20px 0px;
+}
